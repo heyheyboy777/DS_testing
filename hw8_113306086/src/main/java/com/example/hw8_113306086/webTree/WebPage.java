@@ -40,5 +40,11 @@ public class WebPage {
             
 		}
 	}
+    public String getContent() {
+        if (this.dynamicCounter != null) {
+            return this.dynamicCounter.getContent();
+        }
+        return "";
+    }
 	
 }

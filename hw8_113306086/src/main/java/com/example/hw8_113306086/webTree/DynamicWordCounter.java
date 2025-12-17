@@ -106,8 +106,8 @@ public class DynamicWordCounter {
 
         // 簡單的字串搜尋演算法
         // 若需要忽略大小寫，可在此處做 toUpperCase()
-        // content = content.toUpperCase();
-        // keyword = keyword.toUpperCase();
+        content = content.toUpperCase();
+        keyword = keyword.toUpperCase();
 
         int retVal = 0;
         int fromIdx = 0;
@@ -119,5 +119,8 @@ public class DynamicWordCounter {
         }
 
         return retVal;
+    }
+    public String getContent() {
+        return this.content;
     }
 }
